@@ -8,7 +8,7 @@ device = {
         'host':'192.168.0.10',
         'port':'22',
         'username':'termit+ct',
-        'password':'777git.Salihov545'
+        'password':'.Salihov545'
         }
 
 sshCli = ConnectHandler(**device)
@@ -27,4 +27,3 @@ with open(document, 'r') as file:
         if 'bound' in line:
             line = line.split()[2:-1]
             print('{:17} {:20} {:16} {:10} {:>6}'.format(*line)) 
-
