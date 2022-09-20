@@ -30,7 +30,6 @@ sshCli.disconnect()
 with open(document, 'r') as file:
         for line in file:
             if 'ether' in line:
-                line = line[5:]
-                line = line.split()
-                address,network,interface = line   
-                print(f'{address:20}{network:15}{interface:10}')
+                line = line.split()[-3:]
+                #print(line)
+                print('{:20} {:15} {:10}'.format(*line))
